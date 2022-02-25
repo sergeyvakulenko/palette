@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/palette/static/css/main.07c90379.css",
-    "main.js": "/palette/static/js/main.7c38a274.js",
+    "main.js": "/palette/static/js/main.aa9608f8.js",
     "static/media/spectrum-gradient.svg": "/palette/static/media/spectrum-gradient.705438d1ccf778e013fcc9475310d3c3.svg",
     "index.html": "/palette/index.html",
     "main.07c90379.css.map": "/palette/static/css/main.07c90379.css.map",
-    "main.7c38a274.js.map": "/palette/static/js/main.7c38a274.js.map"
+    "main.aa9608f8.js.map": "/palette/static/js/main.aa9608f8.js.map"
   },
   "entrypoints": [
     "static/css/main.07c90379.css",
-    "static/js/main.7c38a274.js"
+    "static/js/main.aa9608f8.js"
   ]
 }
