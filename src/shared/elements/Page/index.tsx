@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { device } from "../../helpers/responsive";
 
 const Container = styled.div`
   height: 100vh;
@@ -8,6 +9,10 @@ const Container = styled.div`
   width: 100%;
   top: 0;
   background-color: white;
+
+  @media ${device.mobile} {
+    height: calc(100vh - calc(100vh - 100%));
+  }
 `;
 
 const Page: FC = ({ children }) => {

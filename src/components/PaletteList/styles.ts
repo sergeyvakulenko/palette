@@ -3,7 +3,7 @@ import bg from "../../assets/img/spectrum-gradient.svg";
 import { device } from "../../shared/helpers/responsive";
 
 export const Root = styled.div`
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;

@@ -33,11 +33,11 @@ const PaletteMetaForm: FC<PaletteMetaFormProps> = ({
     );
   }, []);
 
-  const showEmojiPicker = () => {
+  const showEmojiPicker = (): void => {
     setStage("emoji");
   };
 
-  const handleSavePalette = (emoji: BaseEmoji) => {
+  const handleSavePalette = (emoji: BaseEmoji): void => {
     const newPalette: FlatPalette = {
       id: newPaletteName.toLowerCase().replace(/ /g, "-"),
       paletteName: newPaletteName,
@@ -94,7 +94,7 @@ const PaletteMetaForm: FC<PaletteMetaFormProps> = ({
         aria-labelledby="form-dialog-title"
       >
         <DialogTitle id="form-dialog-title">Choose a Palette Emoji</DialogTitle>
-        <Picker onSelect={handleSavePalette} />
+        <Picker style={{ maxWidth: "310px" }} onSelect={handleSavePalette} />
       </Dialog>
     </div>
   );

@@ -12,8 +12,8 @@ const Root: FC<{}> = () => {
   return (
     <AnimatePresence initial={false}>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/palettes">
+        <Route path="/palette/*">
+          <Route index element={<MainPage />} />
           <Route path="new" element={<PaletteCreatorPage />} />
           <Route path=":paletteId" element={<PalettePage />} />
           <Route
@@ -21,7 +21,7 @@ const Root: FC<{}> = () => {
             element={<SingleColorPalettePage />}
           />
         </Route>
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/palette" replace />} />
       </Routes>
     </AnimatePresence>
   );

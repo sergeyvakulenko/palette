@@ -28,7 +28,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
   drawer: {
     width: drawerWidth.desktop,
     flexShrink: 0,
-    height: "100vh",
+    height: "100%",
     [`@media ${device.tablet}`]: {
       width: `${drawerWidth.tablet} !important`,
     },

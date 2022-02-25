@@ -72,7 +72,7 @@ const Sidebar: FC<SidebarProps> = ({
 
 export default memo(
   Sidebar,
-  (prevState: SidebarProps, nextState: SidebarProps) => {
+  (prevState: SidebarProps, nextState: SidebarProps): boolean => {
     return (
       prevState.open === nextState.open &&
       prevState.maxColors === nextState.maxColors

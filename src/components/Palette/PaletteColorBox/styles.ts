@@ -15,6 +15,7 @@ export const Container = styled(ColorBox)`
 
 export const Content = styled(ColorBoxContent)`
   display: flex;
+  line-height: 12px;
 `;
 
 export const CopyButton = styled(CenteredButton)`
@@ -23,6 +24,10 @@ export const CopyButton = styled(CenteredButton)`
   ${Container}:hover & {
     opacity: 1;
     transition: 0.5s;
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    display: none;
   }
 `;
 

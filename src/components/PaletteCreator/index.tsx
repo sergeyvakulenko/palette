@@ -74,7 +74,7 @@ const PaletteCreator: FC<PaletteCreatorProps> = ({ maxColors = 20 }) => {
       newPalette.id = newPalette.paletteName.toLowerCase().replace(/ /g, "-");
       newPalette.colors = colors;
       dispatch(createPalette(newPalette));
-      navigate("/");
+      navigate("/palette");
     },
     [colors]
   );

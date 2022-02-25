@@ -12,11 +12,17 @@ const Container = styled(ColorBox)`
 `;
 
 const Button = styled(CenteredButton)`
-  opacity: 0;
+  @media (hover: hover) and (pointer: fine) {
+    opacity: 0;
 
-  ${Container}:hover & {
+    ${Container}:hover & {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+
+  @media (hover: none) and (pointer: coarse) {
     opacity: 1;
-    transition: 0.5s;
   }
 `;
 

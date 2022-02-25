@@ -45,7 +45,7 @@ const PaletteList: FC = () => {
   }, [toggleDeleteDialog]);
 
   const openPalette = useCallback((id: string): void => {
-    navigate(`/palettes/${id}`);
+    navigate(id);
   }, []);
 
   const handleDelete = useCallback(
@@ -62,7 +62,7 @@ const PaletteList: FC = () => {
       <Container>
         <Header>
           <h1>Palette</h1>
-          <Link to="/palettes/new">Create Palette</Link>
+          <Link to="new">Create Palette</Link>
         </Header>
         <Content>
           {palettes.map(palette => (

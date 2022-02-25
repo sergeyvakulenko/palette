@@ -19,8 +19,7 @@ export const ColorBox = styled.div.attrs<ColorBoxProps>(props => ({
   width: 20%;
   height: ${props => (props.isSingleColorPalette ? "50%" : "25%")};
   margin: 0 auto;
-  display: inline-block;
-  margin-bottom: -5.5px;
+  float: left;
 
   @media ${device.laptop} {
     width: ${props => (props.isSingleColorPalette ? "20%" : "25%")};
@@ -33,7 +32,6 @@ export const ColorBox = styled.div.attrs<ColorBoxProps>(props => ({
   }
 
   @media ${device.mobile} {
-    margin-bottom: -4.5px;
     width: 100%;
     height: ${props => (props.isSingleColorPalette ? "10%" : "5%")};
   }

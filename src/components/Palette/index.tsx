@@ -15,7 +15,7 @@ import { palettesSelector } from "../../shared/store/selectors/palettes";
 import { Format } from "../../shared/types";
 
 const PaletteContainer = styled.div`
-  height: 100vh;
+  height: 100%;
 `;
 
 const PaletteColorsContainer = styled.div`
