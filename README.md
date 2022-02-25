@@ -8,5 +8,5 @@ I've built this app to show my knowledge of React, Redux, RTK, styled components
 
 Please, contact me if you need a React developer:
 
-sergey.s.vakulenko@gmail.com
+sergey.s.vakulenko@gmail.com  
 https://www.linkedin.com/in/sergeyvakulenko/
