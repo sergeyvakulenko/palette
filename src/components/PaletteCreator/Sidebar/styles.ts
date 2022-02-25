@@ -18,6 +18,10 @@ export const Buttons = styled.div`
   & button {
     width: 50%;
   }
+
+  @media ${device.mobile} {
+    margin: 1rem 0;
+  }
 `;
 
 export const useStyles = makeStyles((theme: Theme) => ({

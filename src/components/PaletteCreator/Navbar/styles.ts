@@ -11,6 +11,10 @@ export const NavButtons = styled.div`
 
   & button {
     margin: 0 0.5rem;
+
+    @media ${device.mobile} {
+      margin: 0 0.1rem;
+    }
   }
 `;
 
@@ -40,6 +44,10 @@ export const useStyles = makeStyles((theme: Theme) => ({
   menuButton: {
     marginLeft: 12,
     marginRight: 20,
+    [`@media ${device.mobile}`]: {
+      marginLeft: 0,
+      marginRight: 0,
+    },
   },
   hide: {
     display: "none",

@@ -19,7 +19,7 @@ const PaletteContainer = styled.div`
 `;
 
 const PaletteColorsContainer = styled.div`
-  height: 90%;
+  height: calc(100% - 10vh);
 `;
 
 const Palette: FC<{}> = () => {

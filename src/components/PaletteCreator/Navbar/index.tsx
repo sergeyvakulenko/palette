@@ -52,7 +52,7 @@ const Navbar: FC<NavbarProps> = ({ open, onOpen, palettes, savePalette }) => {
         <NavButtons>
           <Link to="/">
             <Button variant="contained" color="secondary">
-              Go Back
+              Back
             </Button>
           </Link>
           <Button

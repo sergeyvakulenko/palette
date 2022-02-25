@@ -4,6 +4,7 @@ import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import chroma from "chroma-js";
 import styled from "styled-components";
 import Button from "@material-ui/core/Button";
+import { device } from "../../../../shared/helpers/responsive";
 import { useInput } from "../../../../shared/hooks";
 import { FlatColor } from "../../../../shared/types";
 
@@ -19,6 +20,11 @@ const AddColorButton = styled(Button)`
   width: 100%;
   padding: 1rem !important;
   font-size: 2rem !important;
+
+  @media ${device.mobile} {
+    padding: 0.5rem !important;
+    font-size: 1.5rem !important;
+  }
 `;
 
 const ColorNameInput = styled(TextValidator)`

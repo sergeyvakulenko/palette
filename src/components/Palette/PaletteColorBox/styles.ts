@@ -13,7 +13,9 @@ export const Container = styled(ColorBox)`
   }
 `;
 
-export const Content = styled(ColorBoxContent)``;
+export const Content = styled(ColorBoxContent)`
+  display: flex;
+`;
 
 export const CopyButton = styled(CenteredButton)`
   opacity: 0;
@@ -99,7 +101,7 @@ export const CopyMessage = styled.div<CopyProps>`
     padding: 1rem;
 
     @media ${device.mobile} {
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
 `;

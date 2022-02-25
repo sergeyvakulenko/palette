@@ -12,6 +12,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
     padding: "0 8px",
     ...theme.mixins.toolbar,
     justifyContent: "flex-end",
+    minHeight: 64,
   },
   content: {
     flexGrow: 1,

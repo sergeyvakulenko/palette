@@ -39,6 +39,10 @@ export const SliderContainer = styled.div`
   @media ${device.tablet} {
     width: 150px;
   }
+
+  @media ${device.mobile} {
+    width: 100px;
+  }
 `;
 
 export const StyledSlider = styled(Slider)`
