@@ -1,18 +1,18 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import { useParams } from "react-router-dom";
 import "rc-slider/assets/index.css";
 import styled from "styled-components";
+import {
+  gatherShades,
+  generatePaletteColors,
+} from "shared/helpers/colors";
+import { useAppSelector } from "shared/hooks";
+import { palettesSelector } from "shared/store/selectors/palettes";
+import { Format } from "shared/types";
 import Navbar from "./Navbar";
 import PaletteColorBox from "./PaletteColorBox";
 import GoBackButton from "./GoBackButton";
 import Footer from "./Footer";
-import {
-  gatherShades,
-  generatePaletteColors,
-} from "../../shared/helpers/colors";
-import { useAppSelector } from "../../shared/hooks";
-import { palettesSelector } from "../../shared/store/selectors/palettes";
-import { Format } from "../../shared/types";
 
 const PaletteContainer = styled.div`
   height: 100%;
@@ -22,7 +22,7 @@ const PaletteColorsContainer = styled.div`
   height: calc(100% - 10vh);
 `;
 
-const Palette: FC<{}> = () => {
+const Palette: FC = () => {
   const [level, setLevel] = useState(500);
   const [format, setFormat] = useState(Format.Hex);
   const palettes = useAppSelector(palettesSelector);

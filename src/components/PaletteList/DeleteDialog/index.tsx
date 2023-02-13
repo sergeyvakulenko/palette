@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Avatar from "@material-ui/core/Avatar";

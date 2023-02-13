@@ -1,7 +1,7 @@
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import styled from "styled-components";
-import { device } from "../../../shared/helpers/responsive";
+import { device } from "shared/helpers/responsive";
 
 export const Container = styled.nav`
   display: flex;

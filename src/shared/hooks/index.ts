@@ -27,7 +27,7 @@ export const useInput = (initialValue: string): useInputReturn => {
 
 type useToggleReturn = [boolean, () => void];
 
-export const useToggle = (initialValue: boolean = false): useToggleReturn => {
+export const useToggle = (initialValue = false): useToggleReturn => {
   const [state, setState] = useState(initialValue);
   const toggle = useCallback(() => {
     setState(!state);

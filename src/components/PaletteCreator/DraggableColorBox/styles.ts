@@ -1,7 +1,7 @@
 import { Delete } from "@material-ui/icons";
 import styled from "styled-components";
-import { ColorBox, ColorBoxContent } from "../../../shared/elements/ColorBox";
-import { device } from "../../../shared/helpers/responsive";
+import { ColorBox, ColorBoxContent } from "shared/elements/ColorBox";
+import { device } from "shared/helpers/responsive";
 
 export const Container = styled(ColorBox)<{ color: string }>`
   position: relative;

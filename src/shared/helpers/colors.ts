@@ -4,20 +4,20 @@ import { FlatPalette, Palette, Color, FlatColor, Format } from "../types";
 const LEVELS = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
 
 export function generatePaletteColors(starterPallete: FlatPalette): Palette {
-  let newPallete: Palette = {
+  const newPallete: Palette = {
     ...starterPallete,
     colors: {},
   };
 
-  for (let level of LEVELS) {
+  for (const level of LEVELS) {
     newPallete.colors[level] = [];
   }
 
-  for (let color of starterPallete.colors) {
+  for (const color of starterPallete.colors) {
     const scale = generateScale(color.color, 10).reverse();
 
-    for (let i in scale) {
-      let newColor: Color = {
+    for (const i in scale) {
+      const newColor: Color = {
         name: `${color.name} ${LEVELS[i]}`,
         id: color.name.toLowerCase().replace(/ /g, "-"),
         hex: scale[i],
@@ -44,8 +44,8 @@ function generateScale(hex: string, num: number): string[] {
 
 export function gatherShades(palette: Palette, colorId: string): Color[] {
   let shades: Color[] = [];
-  let colors = palette.colors;
-  for (let key in colors) {
+  const colors = palette.colors;
+  for (const key in colors) {
     shades = shades.concat(colors[key].filter(color => color.id === colorId));
   }
   return shades.slice(1);

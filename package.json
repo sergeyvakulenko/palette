@@ -9,7 +9,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
     "@reduxjs/toolkit": "^1.7.2",
-    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
@@ -28,7 +28,7 @@
     "react-color": "^2.19.3",
     "react-copy-to-clipboard": "^5.0.4",
     "react-dom": "^17.0.2",
-    "react-material-ui-form-validator": "^3.0.0",
+    "react-material-ui-form-validator": "^2.0.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
@@ -43,7 +43,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint ./src",
+    "format": "prettier --write './src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -67,6 +69,10 @@
     "@types/react-copy-to-clipboard": "^5.0.2",
     "@types/react-material-ui-form-validator": "^2.1.1",
     "@types/styled-components": "^5.1.23",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^3.2.3"
   }
 }

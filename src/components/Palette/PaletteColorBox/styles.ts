@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { CenteredButton } from "../../../shared/elements/CenteredButton";
-import { ColorBox, ColorBoxContent } from "../../../shared/elements/ColorBox";
-import { device } from "../../../shared/helpers/responsive";
+import { CenteredButton } from "shared/elements/CenteredButton";
+import { ColorBox, ColorBoxContent } from "shared/elements/ColorBox";
+import { device } from "shared/helpers/responsive";
 
 export const Container = styled(ColorBox)`
   cursor: pointer;

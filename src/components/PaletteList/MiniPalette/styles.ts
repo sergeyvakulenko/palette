@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Delete } from "@material-ui/icons";
-import { ColorBox } from "../../../shared/elements/ColorBox";
-import { device } from "../../../shared/helpers/responsive";
+import { ColorBox } from "shared/elements/ColorBox";
+import { device } from "shared/helpers/responsive";
 
 export const Container = styled.div`
   background-color: white;

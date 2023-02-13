@@ -1,12 +1,12 @@
-import React, { useState, useEffect, FC } from "react";
+import { useState, useEffect, FC } from "react";
 import { ChromePicker } from "react-color";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import chroma from "chroma-js";
 import styled from "styled-components";
 import Button from "@material-ui/core/Button";
-import { device } from "../../../../shared/helpers/responsive";
-import { useInput } from "../../../../shared/hooks";
-import { FlatColor } from "../../../../shared/types";
+import { device } from "shared/helpers/responsive";
+import { useInput } from "shared/hooks";
+import { FlatColor } from "shared/types";
 
 const Container = styled.div`
   width: 100%;
@@ -51,7 +51,7 @@ const ColorPickerForm: FC<ColorPickerFormProps> = ({
     ValidatorForm.addValidationRule("colorNameUnique", (value: string) =>
       colors.every(({ name }) => name.toLowerCase() !== value.toLowerCase())
     );
-    ValidatorForm.addValidationRule("colorUnique", (value: string) =>
+    ValidatorForm.addValidationRule("colorUnique", () =>
       colors.every(({ color }) => color !== currentColor)
     );
   }, []);

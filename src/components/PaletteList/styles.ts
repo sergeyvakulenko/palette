@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import bg from "../../assets/img/spectrum-gradient.svg";
-import { device } from "../../shared/helpers/responsive";
+import { device } from "shared/helpers/responsive";
 
 export const Root = styled.div`
   height: 100%;

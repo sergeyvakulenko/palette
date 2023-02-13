@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { useNavigate } from "react-router-dom";
-import { CenteredButton } from "../../../shared/elements/CenteredButton";
-import { ColorBox } from "../../../shared/elements/ColorBox";
 import styled from "styled-components";
+import { CenteredButton } from "shared/elements/CenteredButton";
+import { ColorBox } from "shared/elements/ColorBox";
 
 const Container = styled(ColorBox)`
   cursor: pointer;
@@ -26,7 +26,7 @@ const Button = styled(CenteredButton)`
   }
 `;
 
-const GoBackButton: FC<{}> = () => {
+const GoBackButton: FC = () => {
   const navigate = useNavigate();
 
   return (

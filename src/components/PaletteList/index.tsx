@@ -1,17 +1,16 @@
-import React, { FC, useState, useEffect, useMemo } from "react";
+import { FC, useCallback, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useToggle } from "shared/hooks";
+import { useAppDispatch, useAppSelector } from "shared/hooks";
+import { palettesSelector } from "shared/store/selectors/palettes";
+import {
+  deletePalette,
+  fetchDefaultPalettes,
+} from "shared/store/actions/palettes";
 import DeletePaletteDialog from "./DeleteDialog";
 import FetchDefaultsDialog from "./FetchDefaultsDialog";
 import MiniPalette from "./MiniPalette";
 import { Root, Container, Header, Content } from "./styles";
-import { useToggle } from "../../shared/hooks";
-import { useAppDispatch, useAppSelector } from "../../shared/hooks";
-import { palettesSelector } from "../../shared/store/selectors/palettes";
-import {
-  deletePalette,
-  fetchDefaultPalettes,
-} from "../../shared/store/actions/palettes";
-import { useCallback } from "react";
 
 const PaletteList: FC = () => {
   const palettes = useAppSelector(palettesSelector);

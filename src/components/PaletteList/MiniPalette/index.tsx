@@ -1,5 +1,5 @@
 import React, { FC, memo } from "react";
-import { FlatColor } from "../../../shared/types";
+import { FlatColor } from "shared/types";
 import {
   Container,
   ColorsContainer,

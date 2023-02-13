@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
@@ -14,7 +14,7 @@ const theme = createTheme({
   },
 });
 
-const App: FC<{}> = () => {
+const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Provider store={store}>

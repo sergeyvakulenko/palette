@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { device } from "../../helpers/responsive";

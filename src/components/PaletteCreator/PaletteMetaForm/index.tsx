@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
@@ -8,8 +8,8 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { Picker, BaseEmoji } from "emoji-mart";
 import "emoji-mart/css/emoji-mart.css";
-import { useInput } from "../../../shared/hooks";
-import { FlatPalette } from "../../../shared/types";
+import { useInput } from "shared/hooks";
+import { FlatPalette } from "shared/types";
 
 interface PaletteMetaFormProps {
   palettes: FlatPalette[];

@@ -1,12 +1,12 @@
-import React, { FC, memo } from "react";
+import { FC, memo } from "react";
 import Drawer from "@material-ui/core/Drawer";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import { FlatColor } from "shared/types";
 import ColorPickerForm from "./ColorPickerForm";
 import { Content, Buttons, useStyles } from "./styles";
-import { FlatColor } from "../../../shared/types";
 
 interface SidebarProps {
   maxColors: number;

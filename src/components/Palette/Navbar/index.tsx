@@ -5,6 +5,8 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Snackbar from "@material-ui/core/Snackbar";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
+import { useToggle } from "shared/hooks";
+import { Format } from "shared/types";
 import {
   Container,
   FormatDropdownContainer,
@@ -12,8 +14,6 @@ import {
   SliderContainer,
   StyledSlider,
 } from "./styles";
-import { useToggle } from "../../../shared/hooks";
-import { Format } from "../../../shared/types";
 
 interface NavbarProps {
   level: number;

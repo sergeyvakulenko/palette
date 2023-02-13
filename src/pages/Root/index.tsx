@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import MainPage from "../MainPage";
@@ -6,7 +6,7 @@ import PaletteCreatorPage from "../PaletteCreatorPage";
 import PalettePage from "../PalettePage";
 import SingleColorPalettePage from "../SingleColorPalettePage";
 
-const Root: FC<{}> = () => {
+const Root: FC = () => {
   const location = useLocation();
 
   return (

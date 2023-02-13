@@ -2,7 +2,7 @@ import React, { FC, memo, useEffect } from "react";
 import { useCallback } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { useNavigate } from "react-router-dom";
-import { useToggle } from "../../../shared/hooks";
+import { useToggle } from "shared/hooks";
 import {
   Container,
   CopyOverlay,

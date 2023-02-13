@@ -1,8 +1,8 @@
-import React, { FC } from "react";
-import Page from "../../shared/elements/Page";
+import { FC } from "react";
+import Page from "shared/elements/Page";
 import Palette from "../../components/Palette";
 
-const SingleColorPalettePage: FC<{}> = () => {
+const SingleColorPalettePage: FC = () => {
   return (
     <Page>
       <Palette />

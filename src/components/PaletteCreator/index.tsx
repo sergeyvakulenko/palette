@@ -1,17 +1,17 @@
-import React, { FC, useState, useCallback } from "react";
-import classNames from "classnames";
+import { FC, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { SortEnd } from "react-sortable-hoc";
+import classNames from "classnames";
+import { arrayMoveImmutable } from "array-move";
+import { getRandomColor, defaultColors } from "shared/helpers/colors";
+import { useAppDispatch, useAppSelector, useToggle } from "shared/hooks";
+import { createPalette } from "shared/store/actions/palettes";
+import { palettesSelector } from "shared/store/selectors/palettes";
+import { FlatColor, FlatPalette } from "shared/types";
 import DraggableColorList from "./DraggableColorList";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import { useStyles } from "./styles";
-import { getRandomColor, defaultColors } from "../../shared/helpers/colors";
-import { useAppDispatch, useAppSelector, useToggle } from "../../shared/hooks";
-import { createPalette } from "../../shared/store/actions/palettes";
-import { palettesSelector } from "../../shared/store/selectors/palettes";
-import { FlatColor, FlatPalette } from "../../shared/types";
-import { arrayMoveImmutable } from "array-move";
 
 interface PaletteCreatorProps {
   maxColors?: number;

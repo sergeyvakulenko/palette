@@ -1,4 +1,4 @@
-import React, { FC, memo } from "react";
+import { FC, memo } from "react";
 import { SortableElement } from "react-sortable-hoc";
 import { Container, Content, DeleteIcon } from "./styles";
 

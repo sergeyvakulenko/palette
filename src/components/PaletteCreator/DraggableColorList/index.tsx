@@ -1,8 +1,8 @@
-import React, { FC, memo } from "react";
-import DraggableColorBox from "../DraggableColorBox";
+import { FC, memo } from "react";
 import { SortableContainer } from "react-sortable-hoc";
 import styled from "styled-components";
-import { FlatColor } from "../../../shared/types";
+import { FlatColor } from "shared/types";
+import DraggableColorBox from "../DraggableColorBox";
 
 const Container = styled.div`
   height: 100%;

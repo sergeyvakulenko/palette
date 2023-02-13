@@ -1,6 +1,6 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import styled from "styled-components";
-import { device, drawerWidth } from "../../../shared/helpers/responsive";
+import { device, drawerWidth } from "shared/helpers/responsive";
 
 export const Content = styled.div`
   width: 90%;

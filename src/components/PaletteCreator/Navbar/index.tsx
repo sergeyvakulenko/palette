@@ -1,4 +1,4 @@
-import React, { FC, memo } from "react";
+import { FC, memo } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -8,10 +8,10 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import AddToPhotosIcon from "@material-ui/icons/AddToPhotos";
+import { useToggle } from "shared/hooks";
+import { FlatPalette } from "shared/types";
 import PaletteMetaForm from "../PaletteMetaForm";
-import { useToggle } from "../../../shared/hooks";
 import { Container, NavButtons, useStyles } from "./styles";
-import { FlatPalette } from "../../../shared/types";
 
 interface NavbarProps {
   open: boolean;
